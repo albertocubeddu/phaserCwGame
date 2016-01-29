@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creditor watch.. Catch the bad debtor</title>
+</head>
+<script type="text/javascript" src="bower_components/phaser/build/phaser.min.js"></script>
+
+<script type="text/javascript" src="js/emitter.js"></script>
+<script type="text/javascript" src="js/creditManager.js"></script>
+<script type="text/javascript" src="js/badDebtor.js"></script>
+<script type="text/javascript" src="js/moneySmall.js"></script>
+<script type="text/javascript" src="js/moneyBig.js"></script>
+<script type="text/javascript" src="js/moneyFactory.js"></script>
+<script type="text/javascript" src="js/money.js"></script>
+<script type="text/javascript" src="js/levelOne.js"></script>
+<script type="text/javascript" src="js/levelTwo.js"></script>
+<script type="text/javascript" src="js/generic.js"></script>
+
+<style type="text/css">
+    body {
+        margin: 0;
+    }
+</style>
+
+
+<body>
+<script type="text/javascript">
+
+(function(){
+    var game = new Phaser.Game(800, 500, Phaser.AUTO, '');
+    game.state.add("levelOne",levelOne);
+    game.state.add("levelTwo",levelTwo); //Not implemented yet!
+    game.state.start("levelOne");
+})();
+
+</script>
+
+
+</body>
+</html>
