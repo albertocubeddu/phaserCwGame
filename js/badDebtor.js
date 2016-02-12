@@ -1,6 +1,6 @@
 badDebtor = function (game) {
     this.game = game;
-    Phaser.Sprite.call(this, this.game, this.game.world.randomX, this.game.world.randomY / 2, 'enemy');
+    Phaser.Sprite.call(this, this.game, this.game.world.randomX+1000, this.game.world.randomY / 2, 'enemy');
     this.game.physics.arcade.enable(this);
 
     this.body.bounce.y = 0.2;
