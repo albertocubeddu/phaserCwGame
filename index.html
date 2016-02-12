@@ -12,6 +12,7 @@
 <script type="text/javascript" src="js/moneyBig.js"></script>
 <script type="text/javascript" src="js/moneyFactory.js"></script>
 <script type="text/javascript" src="js/money.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/levelOne.js"></script>
 <script type="text/javascript" src="js/levelTwo.js"></script>
 <script type="text/javascript" src="js/generic.js"></script>
@@ -28,9 +29,10 @@
 
 (function(){
     var game = new Phaser.Game(800, 500, Phaser.AUTO, '');
+    game.state.add("menu",menu);
     game.state.add("levelOne",levelOne);
     game.state.add("levelTwo",levelTwo); //Not implemented yet!
-    game.state.start("levelOne");
+    game.state.start("menu");
 })();
 
 </script>
